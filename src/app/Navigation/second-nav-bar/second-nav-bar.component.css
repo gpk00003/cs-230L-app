@@ -1,0 +1,13 @@
+.red-underline{
+    text-decoration: none;
+}
+
+.red-underline:hover {
+    text-decoration: underline;
+    color: #d54215!important;
+}
+
+.nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+}
