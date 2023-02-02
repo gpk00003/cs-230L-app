@@ -14,3 +14,29 @@
 .nav-item {
     height: 20!important;
 }
+
+ul li{
+    display:inline-block; 
+    padding:0 3px; 
+    position:relative;
+  }
+  
+/* ridiculous solution for the bars between the components in the list, but it was the only one that worked   */
+ul li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:0px; 
+    top:8px; 
+    height:25px;
+}
+ul li:first-child::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-13px; 
+    top:0px; 
+    height:25px;
+}
