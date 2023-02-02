@@ -6,3 +6,11 @@
     text-decoration: underline;
     color: #d54215!important;
 }
+
+.px-5 {
+    padding-left: 70px!important;
+}
+
+.nav-item {
+    height: 20!important;
+}
