@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './Navigation/nav-bar/nav-bar.component';
 import { SecondNavBarComponent } from './Navigation/second-nav-bar/second-nav-bar.component';
+import { BigLeftFourRightComponent } from './big-left-four-right/big-left-four-right.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    SecondNavBarComponent
+    SecondNavBarComponent,
+    BigLeftFourRightComponent
   ],
   imports: [
     BrowserModule
