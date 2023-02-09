@@ -22,3 +22,33 @@
 .card-title {
     font-weight: bold;
 }
+
+.four-right-titles {
+    font-size: .95rem;
+}
+
+.center-image {
+    display: table;
+}
+
+.center-image a{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.center-image img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: rgb(245, 246, 234)!important;
+}
+
+.big-bold-angular {
+    font-weight: bold;
+    text-align: center;
+    font-family: CopperPot, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
