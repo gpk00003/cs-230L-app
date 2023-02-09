@@ -1,0 +1,24 @@
+.big-bold {
+    font-weight: bold;
+    text-align: center;
+}
+
+.red-underline{
+    text-decoration: none;
+}
+
+.red-underline:hover {
+    text-decoration: underline;
+    text-decoration-color: #d54215;
+    text-decoration-thickness: 1px;
+}
+
+.grey-category {
+    color: grey;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.card-title {
+    font-weight: bold;
+}
