@@ -49,6 +49,9 @@
 .big-bold-angular {
     font-weight: bold;
     text-align: center;
-    font-family: CopperPot, Helvetica, sans-serif;
     font-size: 1.4rem;
+}
+
+.col-3 {
+    
 }
