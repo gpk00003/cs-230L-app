@@ -6,7 +6,7 @@ import { NavBarComponent } from './Navigation/nav-bar/nav-bar.component';
 import { SecondNavBarComponent } from './Navigation/second-nav-bar/second-nav-bar.component';
 import { BigLeftFourRightComponent } from './big-left-four-right/big-left-four-right.component';
 import { GridSixComponent } from './grid-six/grid-six/grid-six.component';
-import { SixCardComponent } from './grid-six/six-card/six-card.component';
+import { SixCardComponent } from './grid-six/grid-six/six-card/six-card.component';
 
 @NgModule({
   declarations: [

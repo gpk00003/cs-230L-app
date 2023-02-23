@@ -1,0 +1,29 @@
+.grey-category {
+    color: grey;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.bi {
+    margin-right: 3px;
+}
+
+.review-text {
+    color: grey;
+    font-size: .85rem;
+}
+
+.card-title {
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.red-underline{
+    text-decoration: none;
+}
+
+.red-underline:hover {
+    text-decoration: underline;
+    text-decoration-color: #d54215;
+    text-decoration-thickness: 1px;
+}

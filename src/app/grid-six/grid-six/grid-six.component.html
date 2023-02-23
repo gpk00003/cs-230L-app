@@ -2,9 +2,14 @@
     <h1 class="py-3 my-3 big-title">Top Football Foods</h1>
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+            <div *ngFor="let card of sixcards">
+                <div class="col">
+                    <app-six-card img={{card.img}} category={{card.category}} cardtitle={{card.cardtitle}} ratings={{card.ratings}}></app-six-card>
+                </div>
+            </div>
+            <!-- <div class="col">
                 <div class="card border-0">
-                    <img src="assets/buffalochicken.jpg" class="card-img-top" alt="...">
+                    <img src={{src}} class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="grey-category">BUFFALO CHICKEN DIP RECIPES</h5>
                         <h3 class="card-title red-underline my-1">Buffalo Chicken Dip</h3>
@@ -163,7 +168,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
