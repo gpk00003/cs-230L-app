@@ -6,18 +6,18 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./six-card.component.css']
 })
 export class SixCardComponent implements OnInit{
-  ngOnInit(): void {
-  }
   
   @Input() img: string;
   @Input() category: string;
   @Input() cardtitle: string;
-  @Input() ratings: number;
+  @Input() ratings: string;
 
   constructor() {
     this.img = "No img found";
     this.category = "No category found";
     this.cardtitle = "No title found";
-    this.ratings = -1;
+    this.ratings = "-1";
+  }
+  ngOnInit(): void {
   }
 }

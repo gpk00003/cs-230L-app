@@ -13,6 +13,7 @@ export class AppComponent {
 
   constructor(){
     for (var card of cardlist){
+      console.log(card)
       this.sixcards.push(card);
     }
   }
