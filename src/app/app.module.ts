@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './Navigation/nav-bar/nav-bar.component';
@@ -7,6 +8,8 @@ import { SecondNavBarComponent } from './Navigation/second-nav-bar/second-nav-ba
 import { BigLeftFourRightComponent } from './big-left-four-right/big-left-four-right.component';
 import { GridSixComponent } from './grid-six/grid-six/grid-six.component';
 import { SixCardComponent } from './grid-six/grid-six/six-card/six-card.component';
+import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
+import { DinnersComponent } from './layouts/dinners/dinners.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import { SixCardComponent } from './grid-six/grid-six/six-card/six-card.componen
     SecondNavBarComponent,
     BigLeftFourRightComponent,
     GridSixComponent,
-    SixCardComponent
+    SixCardComponent,
+    HomeLayoutComponent,
+    DinnersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
