@@ -1,0 +1,23 @@
+.red-underline{
+    text-decoration: none;
+}
+
+.red-underline:hover {
+    text-decoration: underline;
+    color: #d54215!important;
+}
+
+.nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px!important;
+    color: black;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.nav-link:before, 
+.nav-link:after{
+    content: none !important;
+    border: none !important;
+}

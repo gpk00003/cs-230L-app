@@ -9,7 +9,7 @@ import { BigLeftFourRightComponent } from './big-left-four-right/big-left-four-r
 import { GridSixComponent } from './grid-six/grid-six/grid-six.component';
 import { SixCardComponent } from './grid-six/grid-six/six-card/six-card.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
-import { DinnersComponent } from './layouts/dinners/dinners.component';
+import { FiveIngredientDinnersComponent } from './layouts/five-ingredient-dinners/five-ingredient-dinners.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { DinnersComponent } from './layouts/dinners/dinners.component';
     GridSixComponent,
     SixCardComponent,
     HomeLayoutComponent,
-    DinnersComponent
+    FiveIngredientDinnersComponent
   ],
   imports: [
     BrowserModule,
