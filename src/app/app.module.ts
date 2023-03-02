@@ -11,6 +11,9 @@ import { SixCardComponent } from './grid-six/grid-six/six-card/six-card.componen
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 import { FiveIngredientDinnersComponent } from './layouts/five-ingredient-dinners/five-ingredient-dinners.component';
 import { OnePotMealComponent } from './layouts/one-pot-meal/one-pot-meal.component';
+import { QuickneasyComponent } from './layouts/quickneasy/quickneasy.component';
+import { ThirtyMinuteMealsComponent } from './layouts/thirty-minute-meals/thirty-minute-meals.component';
+import { SoupStewChiliComponent } from './layouts/soup-stew-chili/soup-stew-chili.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,10 @@ import { OnePotMealComponent } from './layouts/one-pot-meal/one-pot-meal.compone
     SixCardComponent,
     HomeLayoutComponent,
     FiveIngredientDinnersComponent,
+    OnePotMealComponent,
+    QuickneasyComponent,
+    ThirtyMinuteMealsComponent,
+    SoupStewChiliComponent
   ],
   imports: [
     BrowserModule,
