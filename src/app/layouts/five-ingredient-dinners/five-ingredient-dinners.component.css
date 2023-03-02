@@ -21,3 +21,8 @@
     content: none !important;
     border: none !important;
 }
+
+.big-title{
+    text-align: center;
+    font-weight: bold;
+}

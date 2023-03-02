@@ -10,6 +10,7 @@ import { GridSixComponent } from './grid-six/grid-six/grid-six.component';
 import { SixCardComponent } from './grid-six/grid-six/six-card/six-card.component';
 import { HomeLayoutComponent } from './layouts/home-layout/home-layout.component';
 import { FiveIngredientDinnersComponent } from './layouts/five-ingredient-dinners/five-ingredient-dinners.component';
+import { OnePotMealComponent } from './layouts/one-pot-meal/one-pot-meal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { FiveIngredientDinnersComponent } from './layouts/five-ingredient-dinner
     GridSixComponent,
     SixCardComponent,
     HomeLayoutComponent,
-    FiveIngredientDinnersComponent
+    FiveIngredientDinnersComponent,
   ],
   imports: [
     BrowserModule,
