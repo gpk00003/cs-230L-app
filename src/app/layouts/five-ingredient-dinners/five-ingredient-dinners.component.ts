@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./five-ingredient-dinners.component.css']
 })
 export class FiveIngredientDinnersComponent {
-
+  listName = "fivedinners";
 }

@@ -1,4 +1,4 @@
-export const fouracrosscardlist = [
+export const fivedinnerscardlist = [
     {
         img: "assets/prosciutto.webp",
         category: "PORK TENDERLOIN RECIPES",

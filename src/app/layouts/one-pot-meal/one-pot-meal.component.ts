@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./one-pot-meal.component.css']
 })
 export class OnePotMealComponent {
-
+  listName = "onepot";
 }
