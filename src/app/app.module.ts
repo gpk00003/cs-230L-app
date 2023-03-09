@@ -14,6 +14,8 @@ import { OnePotMealComponent } from './layouts/one-pot-meal/one-pot-meal.compone
 import { QuickneasyComponent } from './layouts/quickneasy/quickneasy.component';
 import { ThirtyMinuteMealsComponent } from './layouts/thirty-minute-meals/thirty-minute-meals.component';
 import { SoupStewChiliComponent } from './layouts/soup-stew-chili/soup-stew-chili.component';
+import { FourAcrossCardComponent } from './four-across-cards/four-across-card/four-across-card.component';
+import { FourAcrossGridComponent } from './four-across-cards/four-across-grid/four-across-grid.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { SoupStewChiliComponent } from './layouts/soup-stew-chili/soup-stew-chil
     OnePotMealComponent,
     QuickneasyComponent,
     ThirtyMinuteMealsComponent,
-    SoupStewChiliComponent
+    SoupStewChiliComponent,
+    FourAcrossCardComponent,
+    FourAcrossGridComponent
   ],
   imports: [
     BrowserModule,

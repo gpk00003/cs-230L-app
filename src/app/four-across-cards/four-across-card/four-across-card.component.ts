@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-six-card',
-  templateUrl: './six-card.component.html',
-  styleUrls: ['./six-card.component.css']
+  selector: 'app-four-across-card',
+  templateUrl: './four-across-card.component.html',
+  styleUrls: ['./four-across-card.component.css']
 })
-export class SixCardComponent implements OnInit{
+export class FourAcrossCardComponent implements OnInit{
   @Input() img: string;
   @Input() category: string;
   @Input() cardtitle: string;
