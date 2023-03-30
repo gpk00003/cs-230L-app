@@ -16,6 +16,8 @@ import { ThirtyMinuteMealsComponent } from './layouts/thirty-minute-meals/thirty
 import { SoupStewChiliComponent } from './layouts/soup-stew-chili/soup-stew-chili.component';
 import { FourAcrossCardComponent } from './four-across-cards/four-across-card/four-across-card.component';
 import { FourAcrossGridComponent } from './four-across-cards/four-across-grid/four-across-grid.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './user-info/user-info.component'
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { FourAcrossGridComponent } from './four-across-cards/four-across-grid/fo
     ThirtyMinuteMealsComponent,
     SoupStewChiliComponent,
     FourAcrossCardComponent,
-    FourAcrossGridComponent
+    FourAcrossGridComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
