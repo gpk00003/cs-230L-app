@@ -96,6 +96,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "cs-230L-app:build:production",
+            "firebaseProject": "allrecipes-app",
+            "firebaseHostingSite": "allrecipes-app"
+          }
         }
       }
     }

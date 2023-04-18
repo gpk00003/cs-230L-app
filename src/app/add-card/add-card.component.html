@@ -3,19 +3,19 @@
         <form #postForm="ngForm" (ngSubmit)="addProduct(postForm.value)">
             <div class="input-group">
                 <span class="input-group-text">Image Link</span>
-                <input type="text" class="form-control" ngModel name="img">
+                <input type="text" class="form-control" ngModel name="img" placeholder="assets/...">
             </div>
             <div class="input-group">
                 <span class="input-group-text">Title</span>
-                <input type="text" class="form-control" ngModel name="cardtitle">
+                <input type="text" class="form-control" ngModel name="cardtitle" placeholder="A Lovely Food Item">
             </div>
             <div class="input-group">
                 <span class="input-group-text">Category</span>
-                <input type="text" class="form-control" ngModel name="category">
+                <input type="text" class="form-control" ngModel name="category" placeholder="GOOD EATIN">
             </div>
             <div class="input-group">
                 <span class="input-group-text">Ratings</span>
-                <input type="text" class="form-control" ngModel name="ratings">
+                <input type="text" class="form-control" ngModel name="ratings" placeholder="2,222">
             </div>
 
             <button class="btn btn-dark" type="submit">

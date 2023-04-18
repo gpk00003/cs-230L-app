@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "allrecipes-app"
+  },
+  "targets": {
+    "allrecipes-app": {
+      "hosting": {
+        "cs-230L-app": [
+          "allrecipes-app"
+        ]
+      }
+    }
   }
 }

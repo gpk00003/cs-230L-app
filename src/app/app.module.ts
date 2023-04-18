@@ -19,7 +19,12 @@ import { FourAcrossCardComponent } from './four-across-cards/four-across-card/fo
 import { FourAcrossGridComponent } from './four-across-cards/four-across-grid/four-across-grid.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './user-info/user-info.component';
-import { AddCardComponent } from './add-card/add-card.component'
+import { AddCardComponent } from './add-card/add-card.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database'
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
+import { AngularFireModule } from '@angular/fire/compat'; 
 
 @NgModule({
   declarations: [
@@ -44,7 +49,10 @@ import { AddCardComponent } from './add-card/add-card.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)), provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
