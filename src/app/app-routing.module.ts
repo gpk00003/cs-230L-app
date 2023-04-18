@@ -6,6 +6,7 @@ import { OnePotMealComponent } from './layouts/one-pot-meal/one-pot-meal.compone
 import { QuickneasyComponent } from './layouts/quickneasy/quickneasy.component';
 import { ThirtyMinuteMealsComponent } from './layouts/thirty-minute-meals/thirty-minute-meals.component';
 import { SoupStewChiliComponent } from './layouts/soup-stew-chili/soup-stew-chili.component';
+import { AddCardComponent } from './add-card/add-card.component';
 
 const routes: Routes = [   
     {
@@ -31,6 +32,10 @@ const routes: Routes = [
     {
       path: 'soupstewchili',
       component: SoupStewChiliComponent
+    },
+    {
+      path: 'admin',
+      component: AddCardComponent
     }   
 ];
 

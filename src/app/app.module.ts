@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +18,8 @@ import { SoupStewChiliComponent } from './layouts/soup-stew-chili/soup-stew-chil
 import { FourAcrossCardComponent } from './four-across-cards/four-across-card/four-across-card.component';
 import { FourAcrossGridComponent } from './four-across-cards/four-across-grid/four-across-grid.component';
 import { HttpClientModule } from '@angular/common/http';
-import { UserInfoComponent } from './user-info/user-info.component'
+import { UserInfoComponent } from './user-info/user-info.component';
+import { AddCardComponent } from './add-card/add-card.component'
 
 @NgModule({
   declarations: [
@@ -35,12 +37,14 @@ import { UserInfoComponent } from './user-info/user-info.component'
     SoupStewChiliComponent,
     FourAcrossCardComponent,
     FourAcrossGridComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    AddCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <form #postForm="ngForm" (ngSubmit)="addProduct(postForm.value)">
+            <div class="input-group">
+                <span class="input-group-text">Image Link</span>
+                <input type="text" class="form-control" ngModel name="img">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Title</span>
+                <input type="text" class="form-control" ngModel name="cardtitle">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Category</span>
+                <input type="text" class="form-control" ngModel name="category">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text">Ratings</span>
+                <input type="text" class="form-control" ngModel name="ratings">
+            </div>
+
+            <button class="btn btn-dark" type="submit">
+                Add New Card
+            </button>
+        </form>
+    </div>
+</div>
