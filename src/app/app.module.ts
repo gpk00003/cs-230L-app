@@ -24,7 +24,8 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database'
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
-import { AngularFireModule } from '@angular/fire/compat'; 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AuthComponent } from './auth/auth/auth.component'; 
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     FourAcrossCardComponent,
     FourAcrossGridComponent,
     UserInfoComponent,
-    AddCardComponent
+    AddCardComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,

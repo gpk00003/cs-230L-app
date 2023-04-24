@@ -7,6 +7,7 @@ import { QuickneasyComponent } from './layouts/quickneasy/quickneasy.component';
 import { ThirtyMinuteMealsComponent } from './layouts/thirty-minute-meals/thirty-minute-meals.component';
 import { SoupStewChiliComponent } from './layouts/soup-stew-chili/soup-stew-chili.component';
 import { AddCardComponent } from './add-card/add-card.component';
+import { AuthComponent } from './auth/auth/auth.component';
 
 const routes: Routes = [   
     {
@@ -36,7 +37,11 @@ const routes: Routes = [
     {
       path: 'admin',
       component: AddCardComponent
-    }   
+    },
+    {
+      path: 'auth',
+      component: AuthComponent
+    }
 ];
 
 @NgModule({
