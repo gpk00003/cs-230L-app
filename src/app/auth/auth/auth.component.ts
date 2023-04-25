@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { AuthService } from '../auth.service';
 import { authResponse } from "../authResponse";
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-auth',
@@ -9,16 +10,28 @@ import { authResponse } from "../authResponse";
   styleUrls: ['./auth.component.css']
 })
 export class AuthComponent {
+  public buttonClicked!: string;
+  private authObservable!: Observable<authResponse>;
+
   constructor(private authService : AuthService){
 
   }
   
   public onSubmit(data: NgForm){
-    console.log("login pushed")
+    console.log(this.buttonClicked + " pushed")
     console.log(data)
-    this.authService.signup(data.value.email, data.value.password).subscribe(
+    
+    if(this.buttonClicked==='signup'){
+      this.authObservable = this.authService.signup(data.value.email, data.value.password);
+    }
+    else if(this.buttonClicked==='login'){
+      this.authObservable = this.authService.login(data.value.email, data.value.password);
+    }
+    
+    this.authObservable.subscribe(
       (data:authResponse) => {
       console.log(data);
+      
       }, error => {
         console.log("error: " + error.error.error.message)
       }

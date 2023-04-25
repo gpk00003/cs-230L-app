@@ -18,7 +18,14 @@ export class AuthService{
             "returnSecureToken": true
         }
         return this.http.post<authResponse>(this.baseUrl + "signUp?key=" + environment.firebase.apiKey, requestBody);
+    }
 
-       
+    public login(email:string, password:string){
+        const requestBody = {
+            "email": email,
+            "password": password,
+            "returnSecureToken": true
+        }
+        return this.http.post<authResponse>(this.baseUrl + "signInWithPassword?key=" + environment.firebase.apiKey, requestBody)
     }
 }
