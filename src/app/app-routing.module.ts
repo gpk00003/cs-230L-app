@@ -8,6 +8,7 @@ import { ThirtyMinuteMealsComponent } from './layouts/thirty-minute-meals/thirty
 import { SoupStewChiliComponent } from './layouts/soup-stew-chili/soup-stew-chili.component';
 import { AddCardComponent } from './add-card/add-card.component';
 import { AuthComponent } from './auth/auth/auth.component';
+import { SuccessfulLoginComponent } from './successful-login/successful-login.component';
 
 const routes: Routes = [   
     {
@@ -41,6 +42,10 @@ const routes: Routes = [
     {
       path: 'auth',
       component: AuthComponent
+    },
+    {
+      path: 'success',
+      component: SuccessfulLoginComponent
     }
 ];
 

@@ -25,7 +25,8 @@ import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database'
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore/';
 import { AngularFireModule } from '@angular/fire/compat';
-import { AuthComponent } from './auth/auth/auth.component'; 
+import { AuthComponent } from './auth/auth/auth.component';
+import { SuccessfulLoginComponent } from './successful-login/successful-login.component'; 
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AuthComponent } from './auth/auth/auth.component';
     FourAcrossGridComponent,
     UserInfoComponent,
     AddCardComponent,
-    AuthComponent
+    AuthComponent,
+    SuccessfulLoginComponent
   ],
   imports: [
     BrowserModule,
