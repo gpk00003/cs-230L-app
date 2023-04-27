@@ -13,10 +13,11 @@ import { Observable } from 'rxjs';
 export class AuthComponent {
   public buttonClicked!: string;
   private authObservable!: Observable<authResponse>;
-  private error!:string;
+  public error:string = '';
+  public isError:boolean;
 
   constructor(private authService : AuthService, private router:Router){
-
+    this.isError = false;
   }
   
   public onSubmit(data: NgForm){
@@ -38,6 +39,7 @@ export class AuthComponent {
       }, error => {
         console.log("error: " + error.error.error.message)
         this.error = error.error.error.message
+        this.isError = true
       }
     )
   }

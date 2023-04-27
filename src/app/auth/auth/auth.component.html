@@ -1,4 +1,5 @@
 <div class="container">
+    <p class="text-danger" *ngIf="isError">{{error}}</p>
     <div class="row">
         <form #authForm = "ngForm" (ngSubmit)="onSubmit(authForm)">
             <div class="input-group">
